@@ -64,9 +64,12 @@ nose.cfg
 
 ## What's going on
 
-Each test is:
+Each test:
 
-* Starting a proxy server with the desired header parameter.
+* Starts a proxy server with the desired header parameter.
+* Creates an instance of `webdriver.Firefox` to point at this proxy for all requests.
+* Uses the driver instance to run the tests.
+* Stops the proxy server.
 
 ## Preparing the environment
 
