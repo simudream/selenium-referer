@@ -71,6 +71,11 @@ Each test:
 * Uses the driver instance to run the tests.
 * Stops the proxy server.
 
+In this example, I'm using `www.facebook.com` as my "site under test". This is
+because Facebook implements the same functionality of setting a different
+tracking cookie value depending on referer header. The referer header value
+is being stored in a cookie called `reg_ext_ref`.
+
 ## Preparing the environment
 
 Optionally, you can create a virtual Python environment for this
